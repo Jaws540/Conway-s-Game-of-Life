@@ -8,6 +8,7 @@ import javax.swing.JFrame;
 public class GUI extends Canvas {
 	
 	private JFrame frame = new JFrame();
+	private TitleBar titleBar = new TitleBar();
 	private Game game;
 	
 	public GUI(){
@@ -18,6 +19,7 @@ public class GUI extends Canvas {
 		frame.setLocationRelativeTo(null);
 		frame.setLayout(new BorderLayout());
 		
+		frame.add(titleBar, BorderLayout.NORTH);
 		frame.add(this, BorderLayout.CENTER);
 		
 		frame.setVisible(true);
