@@ -5,8 +5,9 @@ public class Cell {
 	private boolean alive = false;
 	private int index = 0;
 	
-	public Cell(int index){
+	public Cell(int index, boolean alive){
 		setIndex(index);
+		setAlive(alive);
 	}
 
 	public boolean isAlive() {
